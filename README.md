@@ -1,4 +1,4 @@
-汇集了现有几个[现有书源](https://github.com/chimisgo/BookSource)中综合及出版类的源
+汇集了现有几个[现有书源](https://github.com/chimisgo/BookSource)中综合及出版类的源，同时删除了不必要的排行榜
 
 
 [纯二](https://gitee.com/chuner821/houmo)：中学生读物、墨色阅读、爱下、必看网
