@@ -1,5 +1,3 @@
-厚墨出版类作品(非网文)书源
-
 汇集了现有几个[现有书源](https://github.com/chimisgo/BookSource)中综合及出版类的源
 
 
