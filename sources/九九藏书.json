@@ -1,0 +1,33 @@
+{
+  "name": "九九藏书",
+  "version": 101,
+  "category": 1,
+  "url": "http://www.99lib.net.qq.com.andyt.cn:8888",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["$.bookName", "$.bookName"],
+    "author": ["$.author", "$.author"],
+    "cover": ["$.cover", "$.coverImg"],
+    "summary": ["$.intro", "$.intro"],
+    "category": ["$.category", "$.category"],
+    "status":["a@js->'完结'"],
+    "update": [],
+    "link": ["$.bookUrl@js->'http://www.99lib.net.qq.com.andyt.cn:8888'+${this}"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "$.chapters",
+    "orderBy": 0,
+    "chapter": {
+      "name": "$.name",
+      "link": "$.url@js->'http://www.99lib.net.qq.com.andyt.cn:8888'+${this}"
+    }
+  },
+  "content": {
+    "text": "$.content"
+  },
+  "search": {
+    "link": "http://www.99lib.net.qq.com.andyt.cn:8888/book/search?keyword=${key}&page=0",
+    "list": "$.books"
+  }
+}

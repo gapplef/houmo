@@ -1,0 +1,34 @@
+{
+  "name": "必看网",
+  "version": 100,
+  "category": 0,
+  "url": "https://www.biikan.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["h1"],
+    "author": ["em"],
+    "cover": [".bookListImg >img@attr->src"],
+    "summary": ["p"],
+    "category": [".bookOther > li:nth-child(2) > a"],
+    "status": [],
+    "update": [],
+    "lastChapter": [],
+    "link": ["h1 > a@attr->href"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": ".overflow-h > ul >  li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": ".readContent"
+  },
+  "search": {
+    "link": "https://www.biikan.com/home/book/search.shtml?k=${key}",
+    "list": ".bookList > ul > li"
+  }
+}

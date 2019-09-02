@@ -1,0 +1,93 @@
+{
+  "name": "中学生读物",
+  "version": 100,
+  "category": 0,
+  "url": "https://fox2008.cn",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["h2"],
+    "author": ["dl.dl-horizontal-inline > dd"],
+    "cover": ["img.pull-left@attr->src"],
+    "summary": ["div.summery"],
+    "category": [],
+    "status": [],
+    "update": [],
+    "lastChapter": [],
+    "link": ["a@attr->href"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "li.item",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "div#chapterContent"
+  },
+  "search": {
+    "link": "",
+    "list": ""
+  },
+  "rank": {
+    "link": [
+	  {
+        "name": "小小说",
+        "link": "https://fox2008.cn/Article/List_9/"
+      },
+	  {
+        "name": "故事会",
+        "link": "https://fox2008.cn/Article/List_72/"
+      },
+      {
+        "name": "古典文学",
+        "link": "https://fox2008.cn/Article/List_15/"
+      },
+	  {
+        "name": "中国文学",
+        "link": "https://fox2008.cn/Article/List_10/"
+      },
+	  {
+        "name": "外国名著",
+        "link": "https://fox2008.cn/Article/List_176/"
+      },
+	  {
+        "name": "寓言童话",
+        "link": "https://fox2008.cn/Article/List_13/"
+      },
+	  {
+        "name": "武侠小说",
+        "link": "https://fox2008.cn/Article/List_335/"
+      },
+	  {
+        "name": "百家讲坛",
+        "link": "https://fox2008.cn/Article/List_190/"
+      },
+	  {
+        "name": "中外名人",
+        "link": "https://fox2008.cn/Article/List_259/"
+      },
+	  {
+        "name": "散文作品",
+        "link": "https://fox2008.cn/Article/List_256/"
+      },
+	  {
+        "name": "教育成才",
+        "link": "https://fox2008.cn/Article/List_396/"
+      },
+	  {
+        "name": "其他阅读",
+        "link": "https://fox2008.cn/qtyd/"
+      }
+    ],
+    "list": "div.yd-book-item",
+    "page": {
+      "index": 1,
+      "limit": 20,
+      "begin": "",
+      "next": "index_${index}.html"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "落霞小说",
+  "version": 110,
+  "category": 0,
+  "url": "https://www.luoxia.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["a>h2", "h1:not(#logo)"],
+    "author": ["span.pop-intro@js->${this}.match('([^/]+)$')[1]"],
+    "cover": ["img@attr->src"],
+    "summary": ["div.describe-html>p"],
+    "category": ["span.pop-intro@js->${this}.replace(/([/][^/]+)$/,'')"],
+    "status": ["div.book-describe > p:nth-child(4)@js->${this}.replace('状态：','')"],
+    "update": ["div.book-describe > p:nth-child(5)@js->${this}.replace('最近更新：','')"],
+    "lastChapter": ["div.book-describe > p:nth-child(6) > a@js->${this}.replace('最新章节：','')"],
+    "link": ["a@attr->href"]
+  },
+  "catalog": {
+    "list": "div.book-list > ul > li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#nr1 > p",
+    "next": {
+      "link": "li.next > a",
+      "text": "下一章"
+    }
+  },
+  "search": {
+    "link": "https://www.luoxia.com/?s=${key}",
+    "list": ".cat-search-item"
+  },
+  "rank": {
+    "link": [{
+        "name": "中文经典",
+        "link": "https://www.luoxia.com/jingdian/"
+      },
+      {
+        "name": "外国名著",
+        "link": "https://www.luoxia.com/mingzhu/"
+      },
+      {
+        "name": "言情穿越",
+        "link": "https://www.luoxia.com/yanqing/"
+      }, {
+        "name": "悬疑推理",
+        "link": "https://www.luoxia.com/xuanyi/"
+      },
+      {
+        "name": "影视原著",
+        "link": "https://www.luoxia.com/yuanzhu/"
+      },
+      {
+        "name": "金庸作品集",
+        "link": "https://www.luoxia.com/jinyong/"
+      }
+    ],
+    "list": "li.pop-book2"
+  }
+}

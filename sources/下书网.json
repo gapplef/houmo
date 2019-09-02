@@ -1,0 +1,32 @@
+{
+    "name": "下书网",
+    "version": 100,
+    "category": 3,
+    "url": "https://www.shutxt.com",
+    "charset": "utf-8",
+    "metadata": {
+        "name": ["h3 > a"],
+        "author": ["", "div.bintro > h3 > span > a"],
+        "cover": ["", "div.bpic > img@attr->src"],
+        "summary": [".tp@js->${this}.replace('简介：','')", "div.bintro > div > p:nth-child(2)@js->${this}.replace('简介：','')"],
+        "category": ["", "div.xinxi > ul > li:nth-child(2) > a"],
+        "update": ["", "div.xinxi > ul > li:nth-child(6)@js->${this}.replace('更新时间：','')"],
+        "lastChapter": ["", "div.bintro > div > p:nth-child(1) > a"],
+        "link": ["a@attr->href"]
+    },
+    "catalog": {
+        "list": "td > ul > li",
+        "orderBy": 0,
+        "chapter": {
+            "name": "a",
+            "link": "a@attr->href"
+        }
+    },
+    "content": {
+        "text": ".zw"
+    },
+    "search": {
+        "link": "https://www.shutxt.com/e/search/index.php@post->show=title&entry=1&keyboard=${key}",
+        "list": ".sbintro"
+    }
+}

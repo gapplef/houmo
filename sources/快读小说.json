@@ -1,0 +1,34 @@
+{
+  "name": "快读小说",
+  "version": 105,
+  "category": 3,
+  "url": "http://api.gdugm.cn",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["$.title"],
+    "author": ["$.author"],
+    "cover": ["$.cover"],
+    "summary": ["$.longIntro"],
+    "category": ["$.cat"],
+    "status":[],
+    "update": ["$.chaptersUpdated"],
+    "lastChapter":["$.lastChapter"],
+    "link": ["$._id@js->'http://api.gdugm.cn/toc/mix?&bookId='+${this}"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "$.chapters",
+    "orderBy": 0,
+    "chapter": {
+      "name": "$.title",
+      "link": "$.link@js->'http://chapter.gdugm.cn/chapter/' + encodeURIComponent(${this})"
+    }
+  },
+  "content": {
+    "text": "$.chapter.body"
+  },
+  "search": {
+    "link": "http://api.gdugm.cn/book/search?key=${key}&start=0&limit=100",
+    "list": "$.books"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "name": "一百本书",
+  "version": 105,
+  "category": 0,
+  "url": "https://www.100ben.net",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["div.titles>h3"],
+    "author": ["div.author@js->${this}.match('作者：(.*)')[1]"],
+    "cover": ["a>img@attr->src"],
+    "summary": ["div.intro"],
+    "category": [],
+    "update": [],
+    "lastChapter": [],
+    "link": ["a@attr->href"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "dd>a",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "div#content",
+    "filter":["@div.pre"]
+  },
+  "search": {
+    "link": "https://www.100ben.net/plus/search.php?keyword=${key}",
+    "list": "dd>ul>li"
+  },
+  "rank": {
+    "link": [
+      {
+        "name": "一百本书",
+        "link": "https://www.100ben.net"
+      },
+      {
+        "name": "世界名著",
+        "link": "https://www.100ben.net/shijiemingzhu/"
+      },
+      {
+        "name": "现代文学",
+        "link": "https://www.100ben.net/xiandaiwenxue/"
+      },
+      {
+        "name": "励志书籍",
+        "link": "https://www.100ben.net/lizhishuji/"
+      },
+      {
+        "name": "古典文学",
+        "link": "https://www.100ben.net/gudianwenxue/"
+      },
+      {
+        "name": "武侠小说",
+        "link": "https://www.100ben.net/wuxiaxiaoshuo/"
+      },
+      {
+        "name": "言情小说",
+        "link": "https://www.100ben.net/yanqingxiaoshuo/"
+      },
+      {
+        "name": "推理小说",
+        "link": "https://www.100ben.net/tuilixiaoshuo/"
+      },
+      {
+        "name": "科幻小说",
+        "link": "https://www.100ben.net/kehuanxiaoshuo/"
+      },
+      {
+        "name": "人物传记",
+        "link": "https://www.100ben.net/renwuzhuanji/"
+      },
+      {
+        "name": "盗墓悬疑",
+        "link": "https://www.100ben.net/daomuxuanyi/"
+      },
+      {
+        "name": "玄幻穿越",
+        "link": "https://www.100ben.net/xuanhuanchuanyue/"
+      },
+      {
+        "name": "科普书籍",
+        "link": "https://www.100ben.net/kepushuji/"
+      }
+    ],
+    "list": "dd>ul>li",
+     "page": {
+      "index": 1,
+      "limit": 18,
+      "begin": "",
+      "next": "list_${index}.html"
+    }
+  }
+}

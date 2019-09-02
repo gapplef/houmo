@@ -1,0 +1,34 @@
+{
+  "name": "爱下",
+  "version": 102,
+  "category": 1,
+  "url": "https://www.ixdzs.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["h2 > a"],
+    "author": ["span.l1 > a"],
+    "cover": ["div.list_img > a >img@attr->src"],
+    "summary": ["p.b_intro"],
+    "category": ["i.cp"],
+    "status": [],
+    "update": ["meta[property=og:novel:update_time]@attr->content"],
+    "lastChapter": ["meta[property=og:novel:latest_chapter_name]@attr->content"],
+    "link": ["h2 > a@attr->href"],
+    "catalog": ["a.d_ot:nth-child(2)@attr->href"]
+  },
+  "catalog": {
+    "list": "li.chapter",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "div.content"
+  },
+  "search": {
+    "link": "https://www.ixdzs.com/bsearch?q=${key}",
+    "list": "div.box_k > ul > li"
+  }
+}

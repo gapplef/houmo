@@ -1,0 +1,36 @@
+{
+  "name": "墨色阅读",
+  "version": 102,
+  "category": 0,
+  "url": "http://api10e46r.zhuishushenqi.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["$.title"],
+    "author": ["$.author"],
+    "cover": ["$.cover@js->'http://statics.zhuishushenqi.com' + ${this}"],
+    "summary": ["$.shortIntro","$.longIntro"],
+    "category": ["$.cat", "$.majorCate"],
+    "status":["$.a@js->'完结'"],
+    "update": [
+      "$.updated@js->function getTime(str){ var o = ''; var d = new Date(str); o = d.getUTCFullYear()+'-'+(d.getUTCMonth()+1)+'-'+d.getUTCDate()+' '+d.getUTCHours()+':'+d.getUTCMinutes()+':'+d.getUTCSeconds(); return o; } getTime(${this});"
+    ],
+    "lastChapter": ["$.lastChapter"],
+    "link": ["$._id@js->'http://api.gdugm.cn/toc/mix?bookId=' + ${this}"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "$.chapters",
+    "orderBy": 0,
+    "chapter": {
+      "name": "$.title",
+      "link": "$.link@js->'http://chapter.gdugm.cn/chapter/' + encodeURIComponent(${this})"
+    }
+  },
+  "content": {
+    "text": "$.*.body"
+  },
+  "search": {
+    "link": "http://api10e46r.zhuishushenqi.com/book/fuzzy-search?query=${key}&version=2&appName=mose",
+    "list": "$.books[?(@.contentType =='txt')]"
+  }
+}
