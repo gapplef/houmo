@@ -1,5 +1,5 @@
 
-厚墨书源精选v1.3(原v1版已失效)：[Github链接](https://raw.githubusercontent.com/gapplef/houmo/main/repository.json)，[镜像链接](https://cdn.jsdelivr.net/gh/gapplef/houmo/repository.json)
+厚墨书源精选v1.3(原v1版已失效)：[Github链接](https://raw.githubusercontent.com/gapplef/houmo/master/repository.json)，[镜像链接](https://cdn.jsdelivr.net/gh/gapplef/houmo/repository.json)
 
 综合：有兔阅读<!--My716、快读小说、稻草人书屋、下书网-->
 <br />
